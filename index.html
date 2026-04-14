@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arin Dev Studio — An independent design practice crafting premium, immersive digital experiences with precision and intent.">
+    <meta name="theme-color" content="#FFF8F2">
+    <title>Arin Dev Studio | Experimental Digital Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.9/dist/lenis.css">
+    <link rel="stylesheet" href="styles.css">
+    <base href="./">
+</head>
+<body>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true">
+        <span class="cursor-text"></span>
+    </div>
+
+    <nav class="nav-overlay" id="navOverlay" aria-label="Main navigation">
+        <div class="nav-inner">
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link magnetic-target" data-cursor="GO">Home</a></li>
+                <li><a href="#work" class="nav-link magnetic-target" data-cursor="GO">Work</a></li>
+                <li><a href="#about" class="nav-link magnetic-target" data-cursor="GO">Studio</a></li>
+                <li><a href="#footer" class="nav-link magnetic-target" data-cursor="GO">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="header" id="siteHeader">
+        <div class="logo">Arin Dev Studio</div>
+        <div class="menu-wrapper">
+            <div class="menu-btn magnetic-target" data-cursor="MENU" role="button" aria-label="Toggle navigation" tabindex="0">
+                <span>Menu</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-wrapper">
+        <section class="section hero" data-bg="#FFF8F2" data-text="#2B2B2B" id="hero">
+            <div class="hero-gradient-veil" aria-hidden="true"></div>
+            <div class="hero-geo hero-geo-1" aria-hidden="true"></div>
+            <div class="hero-geo hero-geo-2" aria-hidden="true"></div>
+            <div class="hero-geo hero-geo-3" data-speed="0.4" aria-hidden="true"></div>
+
+            <div class="container relative">
+                <div class="hero-top">
+                </div>
+                
+                <h1 class="hero-title pt-3">
+                    <div class="line-wrapper line-1"><div class="line">Designing</div></div>
+                    <div class="line-wrapper line-2"><div class="line"><em>premium</em> digital</div></div>
+                    <div class="line-wrapper line-3"><div class="line">experiences</div></div>
+                </h1>
+                
+                <div class="hero-desc">
+                    <p>We craft dense, photorealistic digital products that bridge the gap between abstract UI and reality. Built with a strict mobile-first architecture.</p>
+                    <a href="#work" class="btn-experimental magnetic-target mt-medium" data-cursor="GO">
+                        <div class="btn-text">Explore Archive</div>
+                        <div class="btn-bg"></div>
+                    </a>
+                </div>
+
+                <div class="hero-shape layer-back" data-speed="0.6" aria-hidden="true">
+                    Aesthetics <br>
+                    &amp; Motion
+                </div>
+                <div class="hero-shape layer-front" data-speed="1.8" aria-hidden="true">
+                    Studio<br>
+                    Worldwide<br>
+                    Practice
+                </div>
+            </div>
+        </section>
+        <div class="section-divider" aria-hidden="true">
+            <div class="divider-line"></div>
+        </div>
+        <section class="section services relative" data-bg="#FDE1D3" data-text="#2B2B2B" id="services">
+            <div class="section-depth-gradient services-gradient" aria-hidden="true"></div>
+
+            <div class="container relative z-10">
+                <div class="section-header">
+                    <span class="label">01 / Services</span>
+                    <h2 class="h2-dense" data-split="chars">What we do</h2>
+                </div>
+                <div class="services-list-minimal mt-large relative">
+                    <div class="service-row-minimal magnetic-target" data-cursor="VIEW" data-img="./images/svc_arch.png">
+                        <div class="service-row-number" aria-hidden="true">01</div>
+                        <h3>Digital Architecture</h3>
+                        <p>We build robust web experiences from the ground up, utilizing modern headless stacks designed for scale.</p>
+                        <span class="card-tag">Engineering</span>
+                    </div>
+                    <div class="service-row-minimal magnetic-target" data-cursor="VIEW" data-img="./images/svc_brand.png">
+                        <div class="service-row-number" aria-hidden="true">02</div>
+                        <h3>Brand Identity</h3>
+                        <p>Translating abstract strategy into photorealistic, premium visual languages that assert dominance.</p>
+                        <span class="card-tag">Design</span>
+                    </div>
+                    <div class="service-hover-reveal" aria-hidden="true">
+                        <div class="service-reveal-inner">
+                            <img src="" alt="" class="service-reveal-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section work" data-bg="#FFF8F2" data-text="#2B2B2B" id="work">
+            <div class="container pt-3">
+                <div class="section-header">
+                    <span class="label">02 / Portfolio</span>
+                    <h2 class="h2-dense" data-split="chars">Selected Archive [04]</h2>
+                </div>
+                
+                <div class="project-list-experimental cards-layout">
+                    <div class="project-card project-trigger prj-1 magnetic-target" data-cursor="VIEW" 
+                         data-img="./images/nova.png" 
+                         data-process="./images/nova_process.png" 
+                         data-result="./images/nova_result.png" 
+                         data-title="Nova Fitness App" 
+                         data-tags="Strategy, UI/UX, Motion" 
+                         data-desc="A comprehensive digital ecosystem for modern fitness scaling. Blending high-performance tracking with intuitive, reward-driven user behavior to retain engagement.">
+                        <div class="card-img-wrapper">
+                            <img src="./images/nova.png" alt="Nova Fitness App - Strategy, UI/UX, Motion" class="card-img">
+                            <div class="card-img-overlay" aria-hidden="true"></div>
+                            <div class="hover-reveal-ui">
+                                <span>View Case Study</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Nova Fitness</h3>
+                            <div class="card-meta">
+                                <span class="card-tag">Case Study</span>
+                                <span class="card-dot">&middot;</span>
+                                <span class="card-service">App Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card project-trigger prj-2 magnetic-target" data-cursor="VIEW" 
+                         data-img="./images/atelier.png" 
+                         data-process="./images/atelier_process.png" 
+                         data-result="./images/atelier_result.png" 
+                         data-title="Atelier Coffee" 
+                         data-tags="Branding, Art Direction, Web" 
+                         data-desc="Reimagining the digital presence for a specialty coffee roaster. Crafted with deep tones, crisp typography, and an immersive e-commerce flow that emphasizes the craft.">
+                        <div class="card-img-wrapper">
+                            <img src="./images/atelier.png" alt="Atelier Coffee - Branding, Art Direction" class="card-img">
+                            <div class="card-img-overlay" aria-hidden="true"></div>
+                            <div class="hover-reveal-ui">
+                                <span>View Case Study</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Atelier Coffee</h3>
+                            <div class="card-meta">
+                                <span class="card-tag">Case Study</span>
+                                <span class="card-dot">&middot;</span>
+                                <span class="card-service">Brand Identity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card project-trigger prj-3 magnetic-target" data-cursor="VIEW" 
+                         data-img="./images/flux.png" 
+                         data-process="./images/flux_process.png" 
+                         data-result="./images/flux_result.png" 
+                         data-title="Flux Agency" 
+                         data-tags="Web Experience, WebGL" 
+                         data-desc="A radical portfolio platform for a creative agency. Utilizing WebGL shaders and non-standard scroll kinetics to enforce a memorable, narrative-driven digital identity.">
+                        <div class="card-img-wrapper">
+                            <img src="./images/flux.png" alt="Flux Agency — Web Experience, WebGL" class="card-img" loading="lazy">
+                            <div class="card-img-overlay" aria-hidden="true"></div>
+                            <div class="hover-reveal-ui">
+                                <span>View Case Study</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Flux Agency</h3>
+                            <div class="card-meta">
+                                <span class="card-tag">Case Study</span>
+                                <span class="card-dot">&middot;</span>
+                                <span class="card-service">Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card project-trigger prj-4 magnetic-target" data-cursor="VIEW" 
+                         data-img="./images/zenith.png" 
+                         data-process="./images/zenith_process.png" 
+                         data-result="./images/zenith_result.png" 
+                         data-title="Zenith Skincare" 
+                         data-tags="Digital Direction, E-comm" 
+                         data-desc="Luxurious, understated, and fast. The Zenith project involved creating a fluid browsing experience backed by a headless architecture, maximizing conversion and aesthetic.">
+                        <div class="card-img-wrapper">
+                            <img src="./images/zenith.png" alt="Zenith Skincare — Digital Direction, E-commerce" class="card-img" loading="lazy">
+                            <div class="card-img-overlay" aria-hidden="true"></div>
+                            <div class="hover-reveal-ui">
+                                <span>View Case Study</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Zenith Skincare</h3>
+                            <div class="card-meta">
+                                <span class="card-tag">Case Study</span>
+                                <span class="card-dot">&middot;</span>
+                                <span class="card-service">Ecommerce</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section process" data-bg="#FFB7A5" data-text="#2B2B2B" id="process">
+            <div class="container relative">
+                <div class="section-header">
+                    <span class="label">03 / Process</span>
+                    <h2 class="h2-dense" data-split="chars">How we work</h2>
+                </div>
+                
+                <div class="process-steps-editorial mt-large">
+                    <div class="step-editorial">
+                        <div class="step-asset-mask">
+                            <img src="./images/process_1.png" alt="Discovery — Embedded brand research" class="editorial-parallax-img" loading="lazy">
+                        </div>
+                        <div class="step-text-wrapper">
+                            <div class="step-num-minimal">01.</div>
+                            <h3 class="step-title-massive">Discovery</h3>
+                            <p class="step-desc-minimal">We deeply embed ourselves in your reality, dissecting physical assets and brand truth.</p>
+                            <div class="step-accent-line" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <div class="step-editorial reverse-layout">
+                        <div class="step-asset-mask">
+                            <img src="./images/process_2.png" alt="Direction — Aesthetic logic establishment" class="editorial-parallax-img" loading="lazy">
+                        </div>
+                        <div class="step-text-wrapper">
+                            <div class="step-num-minimal">02.</div>
+                            <h3 class="step-title-massive">Direction</h3>
+                            <p class="step-desc-minimal">Establishment of strict aesthetic logic and typographic hierarchies.</p>
+                            <div class="step-accent-line" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <div class="step-editorial">
+                        <div class="step-asset-mask">
+                            <img src="./images/process_3.png" alt="Execution — High-fidelity code output" class="editorial-parallax-img" loading="lazy">
+                        </div>
+                        <div class="step-text-wrapper">
+                            <div class="step-num-minimal">03.</div>
+                            <h3 class="step-title-massive">Execution</h3>
+                            <p class="step-desc-minimal">Translating concepts into high-fidelity code and immersive WebGL environments.</p>
+                            <div class="step-accent-line" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section testimonials" data-bg="#FFF8F2" data-text="#2B2B2B" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">04 / Voices</span>
+                    <h2 class="h2-dense" data-split="chars">Client Praise</h2>
+                </div>
+                <div class="testimonials-grid mt-large">
+                    <div class="t-card">
+                        <div class="t-card-accent" aria-hidden="true"></div>
+                        <p class="t-quote">"They transformed our abstract ideas into a literal digital masterpiece. Absolute precision."</p>
+                        <div class="t-author">
+                            <div class="t-author-avatar" aria-hidden="true">SJ</div>
+                            <div class="t-author-info">
+                                <h4>Sarah Jenkins</h4>
+                                <span>Founder, Nova App</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-card offset-t-card">
+                        <div class="t-card-accent" aria-hidden="true"></div>
+                        <p class="t-quote">"An editorial approach to web design entirely elevated our brand positioning overnight."</p>
+                        <div class="t-author">
+                            <div class="t-author-avatar" aria-hidden="true">DM</div>
+                            <div class="t-author-info">
+                                <h4>David M.</h4>
+                                <span>Director, Atelier Coffee</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section about" data-bg="#FFF8F2" data-text="#2B2B2B" id="about">
+            <div class="pastel-blob blob-1" aria-hidden="true"></div>
+            <div class="pastel-blob blob-2" aria-hidden="true"></div>
+            <div class="bg-watermark p-fg" data-speed="1.4" aria-hidden="true">ARIN</div>
+
+            <div class="container about-container">
+                <div class="about-offset-box">
+                    <div class="section-header mb-4">
+                        <span class="label">05 / Studio</span>
+                    </div>
+                    <p class="about-text p-1" data-split="words">
+                        We are Arin Dev Studio, an independent design practice based on the pursuit of digital excellence. 
+                    </p>
+                    <p class="about-text p-2 mt-medium" data-split="words">
+                        We build immersive web experiences that challenge convention, blending aesthetic precision with technical rigor to redefine brand narratives.
+                    </p>
+                    
+                    <div class="skills-wrapper mt-large">
+                        <span class="skill-tag">Product Design</span>
+                        <span class="skill-tag">Cinematic Mockups</span>
+                        <span class="skill-tag">Web Architecture</span>
+                        <span class="skill-tag">Creative Direction</span>
+                    </div>
+
+                    <a href="#footer" class="btn-experimental magnetic-target mt-large" data-cursor="CLICK">
+                        <div class="btn-text">Read Our Story</div>
+                        <div class="btn-bg"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section insights" data-bg="#FDE1D3" data-text="#2B2B2B" id="insights">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">06 / Notes</span>
+                    <h2 class="h2-dense" data-split="chars">Studio Insights</h2>
+                </div>
+                
+                <div class="insights-list mt-large relative">
+                    <div class="insight-row magnetic-target" data-cursor="READ" data-img="./images/insight_thumb_grid.png">
+                        <div class="insight-meta">Apr 12, 2026 — Opinion</div>
+                        <h3 class="insight-title-elite">The Fallacy of the Minimal Grid</h3>
+                        <p class="insight-preview-txt">Why strict geometry kills organic brand warmth in modern web design.</p>
+                    </div>
+                    <div class="insight-row magnetic-target" data-cursor="READ" data-img="./images/insight_thumb_lighting.png">
+                        <div class="insight-meta">Mar 22, 2026 — Process</div>
+                        <h3 class="insight-title-elite">Lighting Realism in Digital Spaces</h3>
+                        <p class="insight-preview-txt">Emulating DSLR lenses using localized CSS gradients and blurs.</p>
+                    </div>
+                    <div class="insight-row magnetic-target" data-cursor="READ" data-img="./images/insight_thumb_gsap.png">
+                        <div class="insight-meta">Feb 08, 2026 — Engineering</div>
+                        <h3 class="insight-title-elite">Architecting for GSAP Reliability</h3>
+                        <p class="insight-preview-txt">Managing execution stacks and memory leaks in heavy layout shifts.</p>
+                    </div>
+                    <div class="insight-hover-reveal" aria-hidden="true">
+                        <div class="insight-reveal-inner">
+                            <img src="" alt="" class="insight-reveal-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="section footer-dense" data-bg="#2B2B2B" data-text="#FFF8F2" id="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col massive-action">
+                        <h2>Have an idea?</h2>
+                        <a href="mailto:hello@arindev.studio" class="massive-email magnetic-target" data-cursor="CONCEPT">Let's Talk</a>
+                    </div>
+                    <div class="footer-col footer-links">
+                        <div class="link-group">
+                            <span class="label">Social</span>
+                            <a href="#">Instagram</a>
+                            <a href="#">Twitter/X</a>
+                            <a href="#">Dribbble</a>
+                        </div>
+                        <div class="link-group">
+                            <span class="label">Studio</span>
+                            <p>128 Organic Ave.<br>District 4, 90210<br>Worldwide</p>
+                        </div>
+                        <div class="link-group">
+                            <span class="label">Contact</span>
+                            <a href="mailto:hello@arindev.studio" data-cursor="CONCEPT">hello@arindev.studio</a>
+                            <a href="tel:+123456789" data-cursor="CONCEPT">+1 (234) 567 890</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-info">
+                        <p>&copy; 2026 Arin Dev Studio. Designed & Developed by <span class="text-bold">Debadrita Kundu</span></p>
+                        <p class="footer-disclaimer">Conceptual Study: Arin Dev Studio is a fictional entity created for portfolio demonstration.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <p>Independent Practice &middot; 2026 Archive</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div class="case-study-overlay" id="caseStudyOverlay" role="dialog" aria-modal="true" aria-label="Case Study">
+        <div class="cs-close magnetic-target" data-cursor="CLOSE" role="button" tabindex="0" aria-label="Close case study">
+            <span>Close</span>
+        </div>
+        <div class="cs-scroll-container">
+            <section class="cs-section cs-hero">
+                <div class="cs-hero-img-wrapper">
+                    <img src="" alt="Project Hero" class="cs-hero-img parallax-img" id="csHeroImg">
+                </div>
+                <div class="cs-hero-text">
+                    <h1 class="cs-title" id="csTitle">Title</h1>
+                    <span class="cs-category" id="csTags">Tags</span>
+                </div>
+            </section>
+
+            <section class="cs-section cs-intro">
+                <div class="container">
+                    <div class="cs-grid">
+                        <div class="cs-label">Challenge</div>
+                        <div class="cs-text-large" id="csDesc">Description</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cs-section cs-problem">
+                <div class="container">
+                    <div class="cs-grid">
+                        <div class="cs-label">Strategy</div>
+                        <div class="cs-text">We aimed to strip away unnecessary complexity, focusing entirely on an intuitive and aesthetic solution that resonates with the modern consumer.</div>
+                    </div>
+                    <div class="cs-visual-wrapper mt-large">
+                        <img src="" class="cs-process-img parallax-img" id="csProcessImg" alt="Process visualization">
+                    </div>
+                </div>
+            </section>
+
+            <section class="cs-section cs-result">
+                <div class="container">
+                    <div class="cs-grid">
+                        <div class="cs-label">Outcome</div>
+                        <div class="cs-text">An elegant, bold, and high-converting experience that sets a new benchmark in the brand's industry, scaling beautifully across all devices.</div>
+                    </div>
+                    <div class="cs-visual-wrapper mt-large">
+                        <img src="" class="cs-result-img parallax-img" id="csResultImg" alt="Result visualization">
+                    </div>
+                </div>
+            </section>
+            
+            <section class="cs-section cs-footer">
+                <h2 class="cs-footer-title magnetic-target" data-cursor="NEXT">Next Project</h2>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
